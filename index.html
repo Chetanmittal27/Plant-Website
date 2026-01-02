@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Website || TailwindCSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="bg-green-950 fixed w-full top-0 left-0 z-50">
+        <nav class="flex w-full bg-green-950 text-white justify-between items-center h-16 sm:h-20 p-10 ">
+            <h1 class="font-Lobster sm:text-2xl text-white lg:ml-48">IndorePlants.</h1>
+            <div id= "nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full flex justify-center items-center bg-green-950/80 overflow-hidden backdrop-blur  lg:static lg:min-h-fit lg:bg-transparent lg:min-w-auto">
+                <ul class="flex flex-col type:none gap-8 font-bold lg:flex-row">
+                    <li><a href="#Home" class="nav-link ">Home</a></li>
+                    <li><a href="#" class="nav-link">About</a></li>
+                    <li><a href="#" class="nav-link">Popular</a></li>
+                    <li><a href="#" class="nav-link">Review</a></li>
+                </ul>
+
+                <div class="absolute bottom-0 -right-8 opacity-90 lg:hidden">
+                    <img src="assets/leaf-1.png" class="w-32">
+                </div>
+
+                <div class="absolute -left-8 top-0 opacity-90 lg:hidden">
+                    <img src="assets/leaf-2.png" class="w-32">
+                </div>
+            </div>
+
+            <div class="text-xl sm:text-2xl cursor-pointer z-50 lg:hidden">
+                <i class="ri-menu-4-line" id="hamburger"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="Home">
+            <div class="flex flex-col p-9 w-full justify-between items-center gap-7  lg:flex-row lg:justify-between">
+                    <div>
+                        <h1>
+                            <span class="text-yellow-500">Plants</span> make a<br>
+                            positive <span class="text-yellow-500">impact</span> on<br>
+                            your environment.
+                        </h1>
+
+                        <p class="font-Lobster text-slate-300 mt-4 text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur in ad eaque, deleniti vitae, quo, tempore quas nostrum nam architecto voluptatum laboriosam fugiat exercitationem.</p>
+
+                        <div class="mt-16 flex gap-3">
+                            <button id="shop-now" class="text-white bg-yellow-500 font-bold rounded-lg border border-yellow-500">
+                                Shop Now
+                                <i class="ri-leaf-line"></i>
+                            </button>
+
+                            <button id="know-more" class="text-white border border-yellow-500 rounded-lg font-bold">
+                                Know More
+                                <i class="ri-leaf-line"></i>
+                            </button>
+                        </div>
+
+                        <span class="font-bold text-white text-[10px] font-Lobster my-4 [word-spacing:4px]">You will get 30 days free trial.</span>
+
+                        <div class="mt-16 flex flex-row gap-4">
+                            <i class="ri-facebook-fill"></i>
+                            <i class="ri-twitter-x-line"></i>
+                            <i class="ri-instagram-line"></i>
+                            <i class="ri-linkedin-fill"></i>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-[50%]">
+                        <img src="assets/home.png" class="h-[80%]  lg:h-[60vh] lg-w-[30vw]"> 
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
