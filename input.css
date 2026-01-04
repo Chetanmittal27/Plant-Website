@@ -1,15 +1,14 @@
+@import "tailwindcss";
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 body{
-    @apply bg-green-950 text-white font-Jost tracking-wider;
+    @apply bg-[#052e16] text-white tracking-wider;
 }
 
 .nav-link{
-    @apply text-lg font-Jost text-white hover:text-yellow-300 duration-300;
+    @apply text-lg text-white hover:text-yellow-300 duration-300;
 }
 
 section{
@@ -21,9 +20,9 @@ h1{
 }
 
 button{
-    @apply p-3 px-6;
+    @apply px-6 py-3;
 }
 
-i{
+#social i{
     @apply cursor-pointer hover:text-2xl;
 }

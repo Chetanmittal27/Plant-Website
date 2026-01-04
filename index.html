@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plant Website || TailwindCSS</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header class="bg-green-950 fixed w-full top-0 left-0 z-50">
-        <nav class="flex w-full bg-green-950 text-white justify-between items-center h-16 sm:h-20 p-10 ">
-            <h1 class="font-Lobster sm:text-2xl text-white lg:ml-48">IndorePlants.</h1>
-            <div id= "nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full flex justify-center items-center bg-green-950/80 overflow-hidden backdrop-blur  lg:static lg:min-h-fit lg:bg-transparent lg:min-w-auto">
-                <ul class="flex flex-col type:none gap-8 font-bold lg:flex-row">
+
+<body class="font-jost">
+    <header class="bg-[#052e16] fixed w-full top-0 left-0 z-50">
+        <nav
+            class="w-full flex flex-row  bg-[#052e16] text-white justify-between items-center h-16 px-10 sm:h-20 lg:pl-40">
+            <h1 class="font-lobster sm:text-2xl text-white lg:mr-56">IndorePlants.</h1>
+            <div id="nav-menu"
+                class="absolute top-0  left-[-100%] min-h-[80vh] w-full flex justify-center items-center bg-[#052e16]/80 overflow-hidden backdrop-blur  md:static md:min-h-fit md:bg-transparent md:min-w-auto :static lg:min-h-fit lg:bg-transparent lg:min-w-auto">
+                <ul class="flex flex-col font-jost type:none gap-10 font-bold md:flex-row lg:flex-row">
                     <li><a href="#Home" class="nav-link ">Home</a></li>
                     <li><a href="#" class="nav-link">About</a></li>
                     <li><a href="#" class="nav-link">Popular</a></li>
                     <li><a href="#" class="nav-link">Review</a></li>
                 </ul>
 
-                <div class="absolute bottom-0 -right-8 opacity-90 lg:hidden">
+                <div class="absolute bottom-0 -right-8 opacity-90 md:hidden lg:hidden">
                     <img src="assets/leaf-1.png" class="w-32">
                 </div>
 
-                <div class="absolute -left-8 top-0 opacity-90 lg:hidden">
+                <div class="absolute -left-8 top-0 opacity-90 md:hidden lg:hidden">
                     <img src="assets/leaf-2.png" class="w-32">
                 </div>
             </div>
@@ -37,45 +43,199 @@
 
     <main>
         <section id="Home">
-            <div class="flex flex-col p-9 w-full justify-between items-center gap-7  lg:flex-row lg:justify-between">
-                    <div>
-                        <h1>
-                            <span class="text-yellow-500">Plants</span> make a<br>
-                            positive <span class="text-yellow-500">impact</span> on<br>
-                            your environment.
-                        </h1>
+            <div class="w-64 h-64 bg-green-700 absolute top-1/2 left-1/2 blur-3xl rounded-full opacity-40 -z-10"></div>
 
-                        <p class="font-Lobster text-slate-300 mt-4 text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur in ad eaque, deleniti vitae, quo, tempore quas nostrum nam architecto voluptatum laboriosam fugiat exercitationem.</p>
+            <div
+                class="flex flex-col p-10 w-full min-h-[80vh] justify-between items-center gap-10 lg:pl-40 lg:pr-10 lg:flex-row">
+                <div class="lg:max-w-[50%]">
+                    <h1>
+                        <span class="text-yellow-500">Plants</span> make a<br>
+                        positive <span class="text-yellow-500">impact</span> on<br>
+                        your environment.
+                    </h1>
 
-                        <div class="mt-16 flex gap-3">
-                            <button id="shop-now" class="text-white bg-yellow-500 font-bold rounded-lg border border-yellow-500">
-                                Shop Now
-                                <i class="ri-leaf-line"></i>
-                            </button>
+                    <p class="max-w-[80%] font-lobster text-slate-300 mt-4 text-[14px]">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Eos consequatur in ad eaque, deleniti vitae, quo, tempore quas
+                        nostrum nam architecto voluptatum laboriosam fugiat exercitationem.</p>
 
-                            <button id="know-more" class="text-white border border-yellow-500 rounded-lg font-bold">
-                                Know More
-                                <i class="ri-leaf-line"></i>
-                            </button>
-                        </div>
+                    <div class="mt-16 flex gap-3">
+                        <button id="shop-now"
+                            class="text-white bg-yellow-500 font-bold rounded-lg border border-yellow-500">
+                            Shop Now
+                            <i class="ri-leaf-line"></i>
+                        </button>
 
-                        <span class="font-bold text-white text-[10px] font-Lobster my-4 [word-spacing:4px]">You will get 30 days free trial.</span>
-
-                        <div class="mt-16 flex flex-row gap-4">
-                            <i class="ri-facebook-fill"></i>
-                            <i class="ri-twitter-x-line"></i>
-                            <i class="ri-instagram-line"></i>
-                            <i class="ri-linkedin-fill"></i>
-                        </div>
+                        <button id="know-more" class="text-white border border-yellow-500 rounded-lg font-bold">
+                            Know More
+                            <i class="ri-leaf-line"></i>
+                        </button>
                     </div>
 
-                    <div class="lg:w-[50%]">
-                        <img src="assets/home.png" class="h-[80%]  lg:h-[60vh] lg-w-[30vw]"> 
+                    <span class="font-bold text-white text-[10px] font-lobster my-4 [word-spacing:4px]">You will get 30
+                        days free trial.</span>
+
+                    <div class="mt-16 flex flex-row gap-4" id="social">
+                        <i class="ri-facebook-fill"></i>
+                        <i class="ri-twitter-x-line"></i>
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-linkedin-fill"></i>
                     </div>
                 </div>
+
+                <div class="lg:w-[50%]">
+                    <img src="assets/home.png" class="h-[80%]  lg:h-[70vh] lg-w-[30vw]">
+
+                    <div class="hidden lg:inline-block absolute top-20 left-1/2 opacity-30 animate-movingY xl:top-30">
+                        <i class="ri-plant-line text-6xl text-yellow-500"></i>
+                    </div>
+
+                    <div class="hidden lg:inline-block absolute left-1/2 opacity-30 animate-rotating">
+                        <i class="ri-flower-line text-6xl text-yellow-500"></i>
+                    </div>
+
+                    <div
+                        class="hidden lg:inline-block absolute right-[10%] top-32 opacity-30 animate-scalingUp xl:top-42">
+                        <i class="ri-leaf-line text-6xl text-yellow-500"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Services Section -->
+        <section id="part-2">
+
+            <div class="w-full bg-white flex flex-col items-center gap-5 text-green-900 py-20 px-10 xl:flex-row">
+
+                <!-- Delivery Box -->
+                <div class="h-50 w-[80%] border rounded-2xl p-5 flex flex-col gap-5">
+                    <div class="flex flex-row gap-5 line">
+                        <div>
+                            <i class="ri-truck-line text-5xl"></i>
+                        </div>
+                        <div class="leading-4.5 font-bold">
+                            Fast<br>
+                            Delivery
+                        </div>
+                    </div>
+                    <p class="font-sans italic text-justify font-medium text-[14px]">Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. Praesentium ducimus, voluptatum est odio neque ipsum tempora
+                        placeat natus quas quod.</p>
+                </div>
+
+                <!-- Customer Service -->
+                <div class="h-50 w-[80%] border rounded-2xl p-5 flex flex-col gap-5">
+                    <div class="flex flex-row gap-5 line">
+                        <div>
+                            <i class="ri-customer-service-line text-5xl"></i>
+                        </div>
+                        <div class="leading-4.5 font-bold">
+                            Great Customer<br>
+                            Service
+                        </div>
+                    </div>
+                    <p class="font-sans italic text-justify font-medium text-[14px]">Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. Praesentium ducimus, voluptatum est odio neque ipsum tempora
+                        placeat natus quas quod.</p>
+                </div>
+
+                <!-- Plant -->
+                <div class="h-50 w-[80%] border rounded-2xl p-5 overflow-hidden flex flex-col gap-5">
+                    <div class="flex flex-row gap-5 line">
+                        <div>
+                            <i class="ri-plant-line text-5xl"></i>
+                        </div>
+                        <div class="leading-4.5 font-bold">
+                            Original<br>
+                            Plants
+                        </div>
+                    </div>
+                    <p class="font-sans italic text-justify font-medium text-[14px]">Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. Praesentium ducimus, voluptatum est odio neque ipsum tempora
+                        placeat natus quas quod.</p>
+                </div>
+
+                <!-- Affordable Price -->
+                <div class="h-50 w-[80%] border rounded-2xl p-5 overflow-hidden flex flex-col gap-5">
+                    <div class="flex flex-row gap-5 line">
+                        <div>
+                            <i class="ri-money-dollar-circle-line text-5xl"></i>
+                        </div>
+                        <div class="leading-4.5 font-bold">
+                            Affordable<br>
+                            Price
+                        </div>
+                    </div>
+                    <p class="font-sans italic text-justify font-medium text-[14px]">Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. Praesentium ducimus, voluptatum est odio neque ipsum tempora
+                        placeat natus quas quod.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About us -->
+        <section id="about-us">
+
+            <div class="text-center text-3xl text-yellow-500">About Us</div>
+            <p class="text-center text-[12px]">Follow Instructions for More</p>
+
+            <div class="mt-10 w-full flex flex-col xl:flex xl:flex-col xl:items-center gap-12">
+                <!-- Plant-1 -->
+                <div class="py-6 flex flex-col items-center xl:flex xl:flex-row xl:justify-between xl:w-[70vw] xl:gap-12">
+
+                    <!-- Plant 1 Image -->
+                    <div class="w-full xl:w-[40%]">
+                        <img src="assets/plant-1.png" class="h-100 w-100">
+                    </div>
+
+                    <!-- Plant 1 Content -->
+                    <div class="p-10 text-3xl font-semibold flex flex-col gap-9 xl:w-[60%] w-full">
+                        <div>Make your <span class="text-yellow-500">organic</span><br>
+                            garden
+                        </div>
+
+                        <p class="text-[14px] font-medium [word-spacing:5px] tracking-wider text-left">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vitae quia laborum, labore
+                            obcaecati exercitationem blanditiis in aperiam animi adipisci earum eius iusto autem impedit
+                            officiis, cupiditate facilis optio quos quis, cum reprehenderit? Doloribus veritatis
+                            repellendus facere sequi tenetur nemo debitis? Adipisci, ea quae doloremque numquam ab error
+                            obcaecati consequuntur.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Plant-2 -->
+                <div class="py-6 flex flex-col-reverse items-center xl:flex xl:flex-row xl:justify-between xl:w-[70vw] xl:gap-12">
+
+                    <!-- Plant 2 Content -->
+                    <div class="p-10 text-3xl font-semibold flex flex-col gap-9 xl:w-[60%] w-full">
+                        <div>Come with us<br>
+                            <span class="text-yellow-500">grow up</span> your plant
+                        </div>
+
+                        <p class="text-[14px] font-medium [word-spacing:5px] tracking-wider text-left">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vitae quia laborum, labore
+                            obcaecati exercitationem blanditiis in aperiam animi adipisci earum eius iusto autem impedit
+                            officiis, cupiditate facilis optio quos quis, cum reprehenderit? Doloribus veritatis
+                            repellendus facere sequi tenetur nemo debitis? Adipisci, ea quae doloremque numquam ab error
+                            obcaecati consequuntur.
+                        </p>
+                    </div>
+
+                    <!-- Plant 2 Image -->
+                    <div class="w-full xl:w-[40%]">
+                        <img src="assets/plant-2.png" class="h-100 w-100">
+                    </div>
+                </div>
+
+            </div>
+
         </section>
     </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>
